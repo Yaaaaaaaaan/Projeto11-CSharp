@@ -14,26 +14,34 @@ namespace Projeto11
         private Boolean _depositoInicial;
         private double _valorInicial; 
 
+        private int Id
+        {
+            get{ return _numeroConta; }
+            set{
+                if (value >= 1){
+                    _numeroConta = value;
+                }
+            }
+        }
         public string Nome
         {
             get{ return _nomeTitular; }
             set{
-                if (value != null && value.Length > 1)
-                {
+                if (value != null && value.Length > 1){
                     _nomeTitular = value;
                 }
             }
         }
         public double ValorInicial
         {
-            get { return _valorInicial; }
-            set
-            {
+            get{ return _valorInicial; }
+            set{
                 if (value != 0)
                 {
                     _valorInicial = value;
                 }
             }
         }
+
     }
 }
