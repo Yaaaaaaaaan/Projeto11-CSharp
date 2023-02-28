@@ -63,7 +63,7 @@ namespace Projeto11
             if(DepositoInicial == true){
                 _valorInicial = ValorInicial;
             }else{
-                ValorInicial = 0;
+                _valorInicial = 0;
             }
         }
         public void NovoDeposito(double ValorTotal){
