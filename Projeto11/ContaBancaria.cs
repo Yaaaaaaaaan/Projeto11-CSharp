@@ -12,7 +12,8 @@ namespace Projeto11
         private int _numeroConta;
         private string _nomeTitular;
         private Boolean _depositoInicial;
-        private double _valorInicial; 
+        private double _valorInicial;
+        private double _valorDeposito;
 
         private int Id
         {
@@ -49,7 +50,16 @@ namespace Projeto11
                 _depositoInicial = value;
             }
         }
-
+        public double ValorDeposito
+        {
+            get { return _valorDeposito; }
+            set {
+                if (value != 0)
+                {
+                    _valorDeposito = value;
+                }
+            }
+        }
         public void PrimeiroDeposito()
         {
             if(DepositoInicial == true)
@@ -57,8 +67,8 @@ namespace Projeto11
                 _valorInicial = ValorInicial;
             }
         }
-        public void NovoDeposito(double ValorTotal){
-            ValorTotal = 
+        public void NovoDeposito(double ValorTotal, ){
+            ValorTotal = ValorInicial + 
         }
 
         public void NovoSaque(){
