@@ -17,7 +17,7 @@ namespace Projeto11
         private double _valorSaque;
         private double _valorTotal;
 
-        private int Id
+        private int NumeroConta
         {
             get{ return _numeroConta; }
             set{
@@ -94,9 +94,9 @@ namespace Projeto11
             return "Conta; "
                 + _numeroConta
                 + "Nome; "
-                + _numeroConta
+                + _nomeTitular
                 + "Saldo; "
-                + _valorTotal;
+                + _valorTotal.ToString("F2",CultureInfo.InvariantCulture);
         }
     }
 }
