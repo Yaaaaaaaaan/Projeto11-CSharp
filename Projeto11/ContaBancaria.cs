@@ -14,6 +14,8 @@ namespace Projeto11
         private Boolean _depositoInicial;
         private double _valorInicial;
         private double _valorDeposito;
+        private double _valorSaque;
+        private double _valorTotal;
 
         private int Id
         {
@@ -58,6 +60,20 @@ namespace Projeto11
                 }
             }
         }
+        public double ValorSaque
+        {
+            get { return _valorSaque; }
+            set { 
+                if(value != 0){
+                   _valorSaque=value;
+                } 
+            }
+        }
+        public double ValorTotal
+        {
+            get { return _valorTotal; }
+            set { _valorTotal = value; }
+        }
         public void PrimeiroDeposito()
         {
             if(DepositoInicial == true){
@@ -70,8 +86,17 @@ namespace Projeto11
             ValorTotal = ValorInicial + ValorDeposito;
         }
 
-        public void NovoSaque(){
-
+        public void NovoSaque(double ValorTotal){
+            ValorTotal = ValorInicial - ValorSaque;
+        }
+        public override string ToString()
+        {
+            return "Conta; "
+                + _numeroConta
+                + "Nome; "
+                + _numeroConta
+                + "Saldo; "
+                + _valorTotal;
         }
     }
 }
