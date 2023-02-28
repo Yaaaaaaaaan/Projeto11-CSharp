@@ -16,6 +16,7 @@ namespace Projeto11
         private double _valorDeposito;
         private double _valorSaque;
         private double _valorTotal;
+        private int _valorTaxa = 5;
 
         public int NumeroConta
         {
@@ -74,6 +75,10 @@ namespace Projeto11
             get { return _valorTotal; }
             set { _valorTotal = value; }
         }
+        public int valorTaxa
+        {
+            get { return _valorTaxa; }
+        }
         public void PrimeiroDeposito()
         {
             ValorTotal += ValorInicial;
@@ -83,7 +88,7 @@ namespace Projeto11
         }
 
         public void NovoSaque(){
-            ValorTotal -= ValorSaque + 5;
+            ValorTotal -= ValorSaque + valorTaxa;
         }
         public override string ToString()
         {
