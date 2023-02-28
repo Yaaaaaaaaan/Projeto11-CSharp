@@ -11,7 +11,7 @@ namespace Projeto11
     {
         private int _numeroConta;
         private string _nomeTitular;
-        private Boolean _depositoInicial;
+        //private string _depositoInicial;
         private double _valorInicial;
         private double _valorDeposito;
         private double _valorSaque;
@@ -44,13 +44,13 @@ namespace Projeto11
                 }
             }
         }
-        public Boolean DepositoInicial
-        {
-            get{ return _depositoInicial; }
-            set{
-                _depositoInicial = value;
-            }
-        }
+        //public string DepositoInicial
+        //{
+        //    get{ return _depositoInicial; }
+        //    set{
+        //        _depositoInicial = value;
+        //    }
+        //}
         public double ValorDeposito
         {
             get{ return _valorDeposito; }
@@ -74,14 +74,14 @@ namespace Projeto11
             get { return _valorTotal; }
             set { _valorTotal = value; }
         }
-        public void PrimeiroDeposito()
-        {
-            if(DepositoInicial == true){
-                _valorInicial = ValorInicial;
-            }else{
-                _valorInicial = 0;
-            }
-        }
+        //public void PrimeiroDeposito()
+        //{
+        //    if(DepositoInicial = s){
+        //        _valorInicial = ValorInicial;
+        //    }else{
+        //        _valorInicial = 0;
+        //    }
+        //}
         public void NovoDeposito(double ValorTotal){
             ValorTotal = ValorInicial + ValorDeposito;
         }
