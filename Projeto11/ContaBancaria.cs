@@ -37,34 +37,33 @@ namespace Projeto11
         {
             get{ return _valorInicial; }
             set{
-                if (value != 0)
-                {
+                if (value != 0){
                     _valorInicial = value;
                 }
             }
         }
         public Boolean DepositoInicial
         {
-            get { return _depositoInicial; }
+            get{ return _depositoInicial; }
             set{
                 _depositoInicial = value;
             }
         }
         public double ValorDeposito
         {
-            get { return _valorDeposito; }
-            set {
-                if (value != 0)
-                {
+            get{ return _valorDeposito; }
+            set{
+                if (value != 0){
                     _valorDeposito = value;
                 }
             }
         }
         public void PrimeiroDeposito()
         {
-            if(DepositoInicial == true)
-            {
+            if(DepositoInicial == true){
                 _valorInicial = ValorInicial;
+            }else{
+                ValorInicial = 0;
             }
         }
         public void NovoDeposito(double ValorTotal){
