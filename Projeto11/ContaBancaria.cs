@@ -74,14 +74,10 @@ namespace Projeto11
             get { return _valorTotal; }
             set { _valorTotal = value; }
         }
-        //public void PrimeiroDeposito()
-        //{
-        //    if(DepositoInicial = s){
-        //        _valorInicial = ValorInicial;
-        //    }else{
-        //        _valorInicial = 0;
-        //    }
-        //}
+        public void PrimeiroDeposito()
+        {
+            ValorTotal += ValorInicial;
+        }
         public void NovoDeposito(double ValorTotal){
             ValorTotal = ValorInicial + ValorDeposito;
         }
