@@ -22,8 +22,7 @@ namespace Projeto11
             {
                 Console.WriteLine("Insira o valor do depósito inicial; ");
                 CB.ValorInicial = double.Parse(Console.ReadLine());
-                CB.PrimeiroDeposito();
-                Console.WriteLine(CB);
+                
             };
 
             Console.WriteLine(CB);
