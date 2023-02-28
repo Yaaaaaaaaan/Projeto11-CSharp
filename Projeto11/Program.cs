@@ -11,7 +11,12 @@ namespace Projeto11
     {
         static void Main(string[] args)
         {
-
+            ContaBancaria CB = new ContaBancaria();
+            Console.WriteLine("Nova conta número; ");
+            CB.NumeroConta = int.Parse(Console.ReadLine());
+            Console.WriteLine("Insira o nome;");
+            CB.Nome = Console.ReadLine();
+            Console.WriteLine("Insira ");
         }
     }
 }

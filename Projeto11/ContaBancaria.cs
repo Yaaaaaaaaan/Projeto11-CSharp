@@ -17,7 +17,7 @@ namespace Projeto11
         private double _valorSaque;
         private double _valorTotal;
 
-        private int NumeroConta
+        public int NumeroConta
         {
             get{ return _numeroConta; }
             set{
