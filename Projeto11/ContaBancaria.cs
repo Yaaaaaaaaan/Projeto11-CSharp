@@ -83,7 +83,7 @@ namespace Projeto11
         }
 
         public void NovoSaque(){
-            ValorTotal -= ValorSaque;
+            ValorTotal -= ValorSaque + 5;
         }
         public override string ToString()
         {
