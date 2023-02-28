@@ -11,7 +11,6 @@ namespace Projeto11
     {
         private int _numeroConta;
         private string _nomeTitular;
-        //private string _depositoInicial;
         private double _valorInicial;
         private double _valorDeposito;
         private double _valorSaque;
@@ -45,13 +44,6 @@ namespace Projeto11
                 }
             }
         }
-        //public string DepositoInicial
-        //{
-        //    get{ return _depositoInicial; }
-        //    set{
-        //        _depositoInicial = value;
-        //    }
-        //}
         public double ValorDeposito
         {
             get{ return _valorDeposito; }
