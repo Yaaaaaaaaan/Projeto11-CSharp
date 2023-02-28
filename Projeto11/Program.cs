@@ -22,10 +22,15 @@ namespace Projeto11
             {
                 Console.WriteLine("Insira o valor do depósito inicial; ");
                 CB.ValorInicial = double.Parse(Console.ReadLine());
-                
+                CB.PrimeiroDeposito();
+                Console.WriteLine("Dados da conta; " + CB);
             };
-
+            
+            Console.WriteLine("Novo depósito; ");
+            CB.ValorDeposito = double.Parse(Console.ReadLine());
+            CB.NovoDeposito();
             Console.WriteLine(CB);
+
             Console.ReadLine();
         }
     }

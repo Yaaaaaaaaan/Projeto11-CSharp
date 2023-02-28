@@ -79,11 +79,11 @@ namespace Projeto11
             ValorTotal += ValorInicial;
         }
         public void NovoDeposito(){
-            ValorTotal += ValorDeposito;
+            ValorTotal = ValorInicial + ValorDeposito;
         }
 
         public void NovoSaque(){
-            ValorTotal -= ValorSaque;
+            ValorTotal = ValorInicial - ValorSaque;
         }
         public override string ToString()
         {
