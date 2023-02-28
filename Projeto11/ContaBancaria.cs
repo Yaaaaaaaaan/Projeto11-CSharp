@@ -79,19 +79,19 @@ namespace Projeto11
             ValorTotal += ValorInicial;
         }
         public void NovoDeposito(){
-            ValorTotal = ValorInicial + ValorDeposito;
+            ValorTotal += ValorDeposito;
         }
 
         public void NovoSaque(){
-            ValorTotal = ValorInicial - ValorSaque;
+            ValorTotal -= ValorSaque;
         }
         public override string ToString()
         {
             return "Conta; "
                 + _numeroConta
-                + "Nome; "
+                + ", Nome; "
                 + _nomeTitular
-                + "Saldo; "
+                + ", Saldo; "
                 + _valorTotal.ToString("F2",CultureInfo.InvariantCulture);
         }
     }
