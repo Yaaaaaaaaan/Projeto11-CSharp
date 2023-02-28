@@ -16,7 +16,12 @@ namespace Projeto11
             CB.NumeroConta = int.Parse(Console.ReadLine());
             Console.WriteLine("Insira o nome;");
             CB.Nome = Console.ReadLine();
-            Console.WriteLine("Insira ");
+            Console.WriteLine("Selecione; ");
+            Console.WriteLine("0 - Sem depósito inicial");
+            Console.WriteLine("1 - Deposito inicial");
+            CB.DepositoInicial = Boolean.Parse(Console.ReadLine());
+            CB.PrimeiroDeposito();
+
         }
     }
 }
