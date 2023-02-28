@@ -42,6 +42,12 @@ namespace Projeto11
                 }
             }
         }
+        public void NovoDeposito(){
 
+        }
+
+        public void NovoSaque(){
+
+        }
     }
 }
