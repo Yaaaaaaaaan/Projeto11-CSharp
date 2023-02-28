@@ -67,8 +67,8 @@ namespace Projeto11
                 _valorInicial = ValorInicial;
             }
         }
-        public void NovoDeposito(double ValorTotal, ){
-            ValorTotal = ValorInicial + 
+        public void NovoDeposito(double ValorTotal){
+            ValorTotal = ValorInicial + ValorDeposito;
         }
 
         public void NovoSaque(){
