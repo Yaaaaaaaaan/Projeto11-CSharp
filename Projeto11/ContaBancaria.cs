@@ -42,8 +42,23 @@ namespace Projeto11
                 }
             }
         }
-        public void NovoDeposito(){
+        public Boolean DepositoInicial
+        {
+            get { return _depositoInicial; }
+            set{
+                _depositoInicial = value;
+            }
+        }
 
+        public void PrimeiroDeposito()
+        {
+            if(DepositoInicial == true)
+            {
+                _valorInicial = ValorInicial;
+            }
+        }
+        public void NovoDeposito(double ValorTotal){
+            ValorTotal = 
         }
 
         public void NovoSaque(){
