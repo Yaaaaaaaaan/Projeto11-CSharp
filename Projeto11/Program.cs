@@ -33,7 +33,8 @@ namespace Projeto11
             Console.WriteLine("Novo Saque; ");
             CB.ValorSaque = double.Parse(Console.ReadLine());
             CB.NovoSaque();
-            Console.WriteLine("Dados atualizados; " + CB + " Para encerrar aperte qualquer tecla.");
+            Console.WriteLine("Dados atualizados; " + CB );
+            Console.WriteLine(" Para encerrar aperte qualquer tecla.");
             Console.ReadLine();
         }
     }
